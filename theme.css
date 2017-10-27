@@ -1,18 +1,41 @@
 .top-row{
-  font-family: arial;
+  font-family: arial, sans-serif;
+
 }
 
 .top-left{
   position: absolute;
   top:15px;
   left:10px;
-
+  color: gray;
 }
 
 .top-right{
   position: absolute;
   top: 15px;
   right: 10px;
+  color: gray;
+}
+
+.Gmail:hover, .Images:hover, .About:hover, .Store:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.Gmail, .Images{
+  display:inline-block;
+}
+
+.About, .Store{
+  display:inline-block;
+}
+
+.Gmail{
+  padding-right: 28px;
+}
+
+.Store{
+  padding-left: 28px;
 }
 
 .logo{
@@ -31,7 +54,19 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 5px;
+  padding: 5px;
   width: 500px;
+  border: none;
+  outline: none;
+  background: transparent;
+  z-index: 6;
+  -webkit-box-sizing: border-box;
+  box-shadow: 2px 2px 2px grey;
+  border: 1px solid lightgrey;
+}
+
+.searchbar:hover{
+  border-color: #a0a0a0 #b9b9b9 #b9b9b9 #b9b9b9 !important
 }
 
 .imfeelinglucky, .googlesearch{
@@ -46,9 +81,23 @@
   align-items: flex-start;
   border: 1px solid;
   margin: 0px 4px;
+  color: grey;
+}
+
+.imfeelinglucky:hover, .googlesearch:hover{
+  color:black;
 }
 
 .searchbuttons{
   display:block;
   text-align: center;
+}
+
+.sublogotext{
+  position:relative;
+  text-align: center;
+
+  color: #4d79ff;
+  font-family: Arial, Sans-serif;
+  font-size: 13px;
 }
